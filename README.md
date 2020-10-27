@@ -1,5 +1,5 @@
 # GDP-Energy-Scholar-Data-Exploration
-## This projects explore the relationships among GDP, Energy Supply and Scientific Influence of Scholarly Journals of the top 15 countries ranked by ScimagoJournal indicators, over the years between 2006-2015.
+This projects explore the relationships among GDP, Energy Supply and Scientific Influence of Scholarly Journals of the top 15 countries ranked by ScimagoJournal indicators, over the years between 2006-2015.
 ## Step by step
 ### Data Wrangling
 Load the energy data from the file assets/Energy Indicators.xls, which is a list of indicators of energy supply and renewable electricity production from the United Nations for the year 2013, and should be put into a DataFrame with the variable name of Energy. Exclude the footer and header information from the datafile. The first two columns are unneccessary, so you should get rid of them, and you should change the column labels so that the columns are:
@@ -84,4 +84,4 @@ This function converts the Population Estimate series to a string with thousands
 e.g. 12345678.90 -> 12,345,678.90
 ### Bubble Chart
 This function creates a bubble chart showing % Renewable vs. Rank. The size of the bubble corresponds to the countries' 2014 GDP, and the color corresponds to the continent, as shown in the following.
-!image[](bubblechart)
+![](bubblechart.png)
