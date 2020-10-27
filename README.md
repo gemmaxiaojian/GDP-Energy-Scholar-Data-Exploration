@@ -78,15 +78,5 @@ This function cuts % Renewable into 5 bins, groups Top15 by the Continent, as we
 This function converts the Population Estimate series to a string with thousands separator.
 e.g. 12345678.90 -> 12,345,678.90
 ### Bubble Chart
-This function creates a bubble chart showing % Renewable vs. Rank. The size of the bubble corresponds to the countries' 2014 GDP, and the color corresponds to the continent.
-### Groupby Continent - Descriptive Statistics
-This function uses the following dictionary to group the Countries by Continent, then creates a DataFrame that displays the sample size, and the sum, mean, and std deviation for the estimated population of each country.
-ContinentDict = {'China':'Asia', 'United States':'North America', 'Japan':'Asia', 'United Kingdom':'Europe', 'Russian Federation':'Europe', 'Canada':'North America', 'Germany':'Europe', 'India':'Asia', 'France':'Europe', 'South Korea':'Asia', 'Italy':'Europe', 'Spain':'Europe', 'Iran':'Asia', 'Australia':'Australia', 'Brazil':'South America'} This function returns a DataFrame with index named Continent ['Asia', 'Australia', 'Europe', 'North America', 'South America'] and columns ['size', 'sum', 'mean', 'std']
-### GroupbyContinent - 5 bins
-This function cuts % Renewable into 5 bins, groups Top15 by the Continent, as well as these new % Renewable bins, and returns a series telling how many countries are in each of these groups. The Series has a MultiIndex of Continent and the bins for % Renewable. The groups with no countries are not included.
-### Thousands Separator
-This function converts the Population Estimate series to a string with thousands separator.
-e.g. 12345678.90 -> 12,345,678.90
-### Bubble Chart
 This function creates a bubble chart showing % Renewable vs. Rank. The size of the bubble corresponds to the countries' 2014 GDP, and the color corresponds to the continent, as shown in the following.
 ![](bubblechart.png)
